@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Furniro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+
+
+  <body>
+
+
+<nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm border-bottom" style="z-index: 1030; height: 80px;">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="./assets/imge/Frame 168.svg" alt="logo" style="height: 40px;" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item mx-3">
+          <a class="nav-link fw-bold" href="index.html">Home</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link fw-bold" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link fw-bold" href="about.html">About</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link fw-bold" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <div class="d-flex gap-3">
+        <a href="login.html" class="btn btn-outline">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <a href="search.html" class="btn btn-outline">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="wishlist.html" class="btn btn-outline">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <button
+          class="btn btn-outline"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#cartSidebar"
+        >
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<main>
+ 
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title fw-bold">Shopping Cart</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="cart-item d-flex align-items-center mb-3">
+      <img src="assets/imge/Group 146.webp" alt="Asgaard sofa" style="width:60px; height:60px; border-radius:5px;" class="me-3">
+      <div class="flex-grow-1">
+        <h6 class="mb-1">Asgaard sofa</h6>
+        <span>1 x Rs. 250,000.00</span>
+      </div>
+      <button class="btn btn-sm btn-light border rounded-circle">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-item d-flex align-items-center mb-3">
+      <img src="assets/imge/Group 146 (1).webp" alt="Cassaliving Wood" style="width:60px; height:60px; border-radius:5px;" class="me-3">
+      <div class="flex-grow-1">
+        <h6 class="mb-1">Casaliving Wood</h6>
+        <span>1 x Rs. 270,000.00</span>
+      </div>
+      <button class="btn btn-sm btn-light border rounded-circle">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <hr>
+    <div class="d-flex justify-content-between mb-3">
+      <span class="fw-bold">Subtotal</span>
+      <span class="text-warning fw-bold">Rs. 520,000.00</span>
+    </div>
+
+    <div class="d-flex flex-wrap gap-2">
+      <button class="btn btn-outline-dark flex-fill">Cart</button>
+      <button class="btn btn-dark flex-fill">Checkout</button>
+       <a href="./comparison.html" class="btn btn-outline-dark flex-fill">Comparison</a>
+
+    </div>
+  </div>
+</div>
+
+<section class="py-5 bg-light min-vh-100">
+  <div class="container">
+    <h1 class="text-center mb-4 fw-bold"> Your Favorite Items</h1>
+    <h2 class="text-center mb-4 fw-bold">Your Wishlist  <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#f50000" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></h2>
+    <div class="row g-4">
+<div class="row g-4">
+
+  <div class="product col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card border-0 shadow-sm position-relative">
+      <img src="assets/imge/1.webp" class="card-img-top" alt="Syltherine">
+      <div class="card-body text-start">
+        <h5 class="fw-bold mb-1">Syltherine</h5>
+        <p class="text-muted mb-2 small">Stylish cafe chair</p>
+        <div>
+          <span class="fw-bold text-dark">Rp 2.500.000</span>
+          <span class="text-muted text-decoration-line-through small">Rp 3.500.000</span>
+        </div>
+        <a href="Product Page.html" class="btn btn-outline-dark btn-sm mt-3 w-100">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card border-0 shadow-sm position-relative">
+      <img src="assets/imge/new.webp" class="card-img-top" alt="Leviosa">
+      <div class="card-body text-start">
+        <h5 class="fw-bold mb-1">Leviosa</h5>
+        <p class="text-muted mb-2 small">Stylish cafe chair</p>
+        <div>
+          <span class="fw-bold text-dark">Rp 2.500.000</span>
+          <span class="text-muted text-decoration-line-through small">Rp 3.500.000</span>
+        </div>
+        <a href="Product Page.html" class="btn btn-outline-dark btn-sm mt-3 w-100">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card border-0 shadow-sm position-relative">
+      <img src="assets/imge/3.webp" class="card-img-top" alt="Lolito">
+      <div class="card-body text-start">
+        <h5 class="fw-bold mb-1">Lolito</h5>
+        <p class="text-muted mb-2 small">Luxury big sofa</p>
+        <div>
+          <span class="fw-bold text-dark">Rp 7.000.000</span>
+          <span class="text-muted text-decoration-line-through small">Rp 14.000.000</span>
+        </div>
+        <a href="Product Page.html" class="btn btn-outline-dark btn-sm mt-3 w-100">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card border-0 shadow-sm position-relative">
+      <img src="assets/imge/4.webp" class="card-img-top" alt="Respira">
+      <div class="card-body text-start">
+        <h5 class="fw-bold mb-1">Respira</h5>
+        <p class="text-muted mb-2 small">Outdoor bar table and stool</p>
+        <div>
+          <span class="fw-bold text-dark">Rp 500.000</span>
+        </div>
+        <a href="Product Page.html" class="btn btn-outline-dark btn-sm mt-3 w-100">View Details</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-md-3 text-start">
+        <h5 class="fw-bold mb-3">Funiro.</h5>
+        <p class="text-muted small mb-0">
+          400 University Drive Suite 200 Coral Gables,<br>
+          FL 33134 USA
+        </p>
+      </div>
+
+     
+      <div class="links col-6 col-md-3 text-start">
+        <h6 class="text-muted mb-3">Links</h6>
+        <ul class="list-unstyled d-flex flex-column gap-3">
+          <li><a href="index.html" class="text-dark text-decoration-none fw-bold">Home</a></li>
+          <li><a href="shop.html" class="text-dark text-decoration-none fw-bold">Shop</a></li>
+          <li><a href="about.html" class="text-dark text-decoration-none fw-bold">About</a></li>
+          <li><a href="Contact.html" class="text-dark text-decoration-none fw-bold">Contact</a></li>
+        </ul>
+      </div>
+      <div class=" help col-6 col-md-3 text-start">
+        <h6 class="text-muted mb-3">Help</h6>
+        <ul class="list-unstyled d-flex flex-column gap-3">
+          <li><a href="#" class="text-dark text-decoration-none fw-bold">Payment Options</a></li>
+          <li><a href="#" class="text-dark text-decoration-none fw-bold">Returns</a></li>
+          <li><a href="#" class="text-dark text-decoration-none fw-bold">Privacy Policies</a></li>
+        </ul>
+      </div>
+      <div class=" Newsletter col-12 col-md-3 text-start">
+        <h6 class="text-muted mb-3">Newsletter</h6>
+        <form class="d-flex border-bottom pb-2">
+          <input type="email" class="form-control border-0 p-0 me-2" placeholder="Enter Your Email Address">
+          <button type="submit" class="btn btn-link p-0 text-dark text-uppercase fw-bold">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <hr class="my-4">
+    <p class="small text-muted mb-0">&copy; 2023 Furniro. All rights reserved</p>
+  </div>
+</footer>
+
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
